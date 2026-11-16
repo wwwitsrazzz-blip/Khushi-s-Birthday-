@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Simran (Khushi) — 19th November Party</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blush: '#FFD1DC',
+            blushDeep: '#F48FB1',
+            roseGold: '#E09F9D',
+            lavender: '#E6E6FA',
+            champagne: '#F7E7CE',
+            cream: '#FFFDF9',
+            plum: '#2D242C',
+            plumSoft: '#5A4A58',
+            gold: '#D4AF37',
+            goldLight: '#F3E5AB'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            editorial: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            handwriting: ['"Dancing Script"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --blush: #FFD1DC;
+      --lavender: #E6E6FA;
+      --champagne: #F7E7CE;
+      --rose-gold: #E09F9D;
+      --cream: #FFFDF9;
+      --plum: #2D242C;
+    }
+
+    body {
+      background-color: #FFFDF9;
+      color: #2D242C;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      background-image:
+        radial-gradient(circle at 10% 12%, rgba(255, 209, 220, 0.78) 0%, transparent 42%),
+        radial-gradient(circle at 90% 18%, rgba(230, 230, 250, 0.82) 0%, transparent 44%),
+        radial-gradient(circle at 48% 52%, rgba(247, 231, 206, 0.62) 0%, transparent 48%),
+        radial-gradient(circle at 86% 86%, rgba(224, 159, 157, 0.45) 0%, transparent 45%);
+    }
+
+    /* Gold Foil Shimmer Text */
+    .gold-foil {
+      background: linear-gradient(135deg, #B8860B 0%, #E5C158 30%, #FFF3B0 50%, #D4AF37 70%, #996515 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: goldShimmer 3.8s linear infinite;
+    }
+
+    @keyframes goldShimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    /* Glassmorphism Cards */
+    .glass-card {
+      background: rgba(255, 253, 249, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.94);
+      box-shadow: 0 14px 36px -8px rgba(45, 36, 44, 0.08), 0 4px 14px -2px rgba(212, 175, 55, 0.14);
+    }
+
+    .glass-pink {
+      background: linear-gradient(135deg, rgba(255, 209, 220, 0.68), rgba(255, 253, 249, 0.9));
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.96);
+      box-shadow: 0 18px 42px -10px rgba(244, 143, 177, 0.28);
+    }
+
+    /* Twinkling Fairy Lights String */
+    .fairy-bulb {
+      animation: twinkleBulb 1.8s ease-in-out infinite alternate;
+    }
+
+    @keyframes twinkleBulb {
+      0% { opacity: 0.45; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1.22); }
+    }
+
+    /* Drifting Helium Balloons */
+    .helium-balloon {
+      position: fixed;
+      bottom: -140px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.52;
+      animation: riseBalloon linear infinite;
+    }
+
+    @keyframes riseBalloon {
+      0% {
+        transform: translateY(0) translateX(0) rotate(-4deg);
+        opacity: 0;
+      }
+      12% { opacity: 0.55; }
+      50% { transform: translateY(-55vh) translateX(22px) rotate(5deg); }
+      88% { opacity: 0.5; }
+      100% {
+        transform: translateY(-120vh) translateX(-18px) rotate(-4deg);
+        opacity: 0;
+      }
+    }
+
+    /* Floating Gold Dust */
+    .gold-dust {
+      position: fixed;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #FFF3B0 0%, #D4AF37 70%, transparent 100%);
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.7;
+      animation: floatDust 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatDust {
+      0% { transform: translateY(0px) translateX(0px) scale(0.8); opacity: 0.35; }
+      50% { transform: translateY(-45px) translateX(18px) scale(1.25); opacity: 0.9; }
+      100% { transform: translateY(-90px) translateX(-15px) scale(0.9); opacity: 0.4; }
+    }
+
+    /* Photo Aesthetic Filters */
+    .filter-original { filter: none; }
+    .filter-golden { filter: sepia(0.22) saturate(1.28) contrast(1.04) brightness(1.04); }
+    .filter-vintage { filter: sepia(0.32) hue-rotate(-12deg) saturate(1.12) contrast(0.96) brightness(1.03); }
+    .filter-dreamy { filter: contrast(0.95) brightness(1.08) saturate(1.18) drop-shadow(0 0 12px rgba(255, 209, 220, 0.45)); }
+
+    /* Non-blocking Smooth Entrance Reveal */
+    #entrance-overlay {
+      transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.6s ease;
+    }
+
+    #entrance-overlay.opened {
+      opacity: 0;
+      transform: scale(1.03);
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    /* Polaroid Hover */
+    .polaroid-card {
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+    }
+
+    .polaroid-card:hover {
+      transform: translateY(-6px) rotate(0deg) !important;
+      box-shadow: 0 22px 44px -10px rgba(45, 36, 44, 0.14);
+    }
+
+    /* 3D Flip Cards */
+    .flip-card {
+      perspective: 1200px;
+      height: 235px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner,
+    .flip-card.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 1.5rem;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+
+    /* Scratch-Off Card */
+    .scratch-wrapper {
+      position: relative;
+      user-select: none;
+      touch-action: none;
+    }
+
+    .scratch-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 1.5rem;
+      cursor: grab;
+      z-index: 10;
+      transition: opacity 0.6s ease;
+    }
+
+    .scratch-canvas:active {
+      cursor: grabbing;
+    }
+
+    .scratch-canvas.revealed {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Candle Flame & Smoke Animations */
+    .candle-flame {
+      transform-origin: center bottom;
+      animation: flicker 0.9s ease-in-out infinite alternate;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .candle-flame.blown-out {
+      opacity: 0;
+      transform: scale(0.1) translateY(8px);
+    }
+
+    @keyframes flicker {
+      0% { transform: scale(0.95) rotate(-2deg); }
+      50% { transform: scale(1.06) rotate(2deg); }
+      100% { transform: scale(0.98) rotate(-1deg); }
+    }
+
+    .smoke-puff {
+      opacity: 0;
+      transform: translateY(0) scale(0.6);
+    }
+
+    .smoke-puff.rising {
+      animation: riseSmoke 2.2s ease-out forwards;
+    }
+
+    @keyframes riseSmoke {
+      0% { opacity: 0.75; transform: translateY(0) scale(0.6); }
+      100% { opacity: 0; transform: translateY(-42px) scale(1.7); }
+    }
+
+    .sparkler-star {
+      animation: sparklerPulse 0.45s ease-in-out infinite alternate;
+    }
+
+    @keyframes sparklerPulse {
+      0% { transform: scale(0.75) rotate(0deg); opacity: 0.7; }
+      100% { transform: scale(1.3) rotate(25deg); opacity: 1; }
+    }
+
+    /* Vinyl Spinning Animation */
+    .vinyl-spin {
+      animation: spinVinyl 7s linear infinite;
+    }
+
+    .vinyl-paused {
+      animation-play-state: paused;
+    }
+
+    @keyframes spinVinyl {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-blush selection:text-plum">
+
+  <!-- Full-Screen Confetti & Fireworks Canvas -->
+  <canvas id="celebration-canvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
+
+  <!-- Ambient Drifting Balloons & Gold Dust Layer -->
+  <div id="balloons-layer" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+  <div id="gold-dust-layer" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+  <!-- =========================================================
+       1. INSTANT LUXURY GIFT ENVELOPE ENTRANCE
+       ========================================================= -->
+  <div id="entrance-overlay" role="dialog" aria-label="Birthday Surprise Entrance" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gradient-to-br from-[#FFF5F7] via-[#F7E7CE] to-[#E6E6FA]">
+    <div id="entrance-card" class="relative max-w-lg w-full glass-card rounded-3xl p-8 sm:p-12 text-center border-2 border-white shadow-2xl overflow-hidden cursor-pointer">
+      <!-- Mini Bunting Garland Inside Card -->
+      <svg viewBox="0 0 400 36" class="w-full h-7 mb-2 pointer-events-none">
+        <path d="M0 4 Q200 22 400 4" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+        <polygon points="24,6 44,8 33,24" fill="#FFD1DC"/>
+        <polygon points="68,10 88,11 77,27" fill="#D4AF37"/>
+        <polygon points="114,13 134,14 123,30" fill="#E6E6FA"/>
+        <polygon points="160,15 180,15 170,31" fill="#E09F9D"/>
+        <polygon points="208,15 228,15 218,31" fill="#FFD1DC"/>
+        <polygon points="256,14 276,13 266,29" fill="#D4AF37"/>
+        <polygon points="302,11 322,10 312,26" fill="#E6E6FA"/>
+        <polygon points="348,8 368,6 358,22" fill="#E09F9D"/>
+      </svg>
+
+      <!-- Skip Intro Fallback -->
+      <button type="button" id="skip-intro-btn" class="absolute top-4 right-4 px-3 py-1 rounded-full bg-white/85 hover:bg-white text-[11px] font-semibold text-plumSoft hover:text-plum transition cursor-pointer shadow-xs">
+        Skip Intro →
+      </button>
+
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blush/70 text-plum text-xs font-bold tracking-widest uppercase mb-4">
+        <span>🎈 19th November Birthday Party 🎂</span>
+      </div>
+
+      <p class="font-editorial italic text-xl sm:text-2xl text-plumSoft mb-1">
+        A Special Birthday Surprise For
+      </p>
+
+      <h1 class="font-serif text-4xl sm:text-5xl font-bold text-plum tracking-tight mb-2">
+        Simran
+      </h1>
+
+      <p class="font-script text-3xl sm:text-4xl gold-foil mb-5">
+        Our Dearest Khushi / Khushi Mama
+      </p>
+
+      <p class="text-sm sm:text-base text-plumSoft max-w-md mx-auto leading-relaxed mb-7">
+        Step inside a joyful birthday celebration filled with balloons, music, permanent family memories, and heartfelt blessings!
+      </p>
+
+      <button type="button" id="open-surprise-btn" class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#D4AF37] text-white font-bold text-base sm:text-lg shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer">
+        <span>Open Birthday Party 🎉</span>
+      </button>
+
+      <p class="text-xs text-plumSoft/80 mt-4">
+        🎵 Tap anywhere on the card to enter &amp; play Happy Birthday melody
+      </p>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MAIN BIRTHDAY CELEBRATION WEBPAGE
+       ========================================================= -->
+  <div id="main-content" class="relative z-10">
+
+    <!-- Festive Top Bunting Garland & Twinkling Fairy Lights -->
+    <div class="w-full overflow-hidden pointer-events-none select-none pt-1">
+      <svg viewBox="0 0 1200 54" class="w-full h-10 sm:h-12 preserve-3d">
+        <path d="M0 6 Q300 32 600 10 T1200 10" fill="none" stroke="#D4AF37" stroke-width="2"/>
+        <!-- Pastel & Gold Triangular Party Flags -->
+        <polygon points="35,9 75,13 52,38" fill="#FFD1DC" stroke="#fff" stroke-width="1"/>
+        <polygon points="105,15 145,18 122,43" fill="#D4AF37" stroke="#fff" stroke-width="1"/>
+        <polygon points="175,19 215,21 193,46" fill="#E6E6FA" stroke="#fff" stroke-width="1"/>
+        <polygon points="245,21 285,21 265,47" fill="#E09F9D" stroke="#fff" stroke-width="1"/>
+        <polygon points="315,21 355,19 336,45" fill="#F7E7CE" stroke="#fff" stroke-width="1"/>
+        <polygon points="385,18 425,15 407,41" fill="#FFD1DC" stroke="#fff" stroke-width="1"/>
+        <polygon points="455,14 495,12 476,37" fill="#D4AF37" stroke="#fff" stroke-width="1"/>
+        <polygon points="525,11 565,10 545,35" fill="#E6E6FA" stroke="#fff" stroke-width="1"/>
+        <polygon points="625,10 665,12 644,36" fill="#E09F9D" stroke="#fff" stroke-width="1"/>
+        <polygon points="695,13 735,16 713,41" fill="#FFD1DC" stroke="#fff" stroke-width="1"/>
+        <polygon points="765,17 805,19 784,45" fill="#D4AF37" stroke="#fff" stroke-width="1"/>
+        <polygon points="835,20 875,21 855,47" fill="#E6E6FA" stroke="#fff" stroke-width="1"/>
+        <polygon points="905,21 945,20 926,46" fill="#F7E7CE" stroke="#fff" stroke-width="1"/>
+        <polygon points="975,19 1015,17 996,42" fill="#E09F9D" stroke="#fff" stroke-width="1"/>
+        <polygon points="1045,15 1085,13 1066,38" fill="#FFD1DC" stroke="#fff" stroke-width="1"/>
+        <polygon points="1115,12 1155,10 1136,35" fill="#D4AF37" stroke="#fff" stroke-width="1"/>
+
+        <!-- Twinkling Fairy Bulbs -->
+        <circle class="fairy-bulb" cx="90" cy="14" r="4" fill="#FFF3B0"/>
+        <circle class="fairy-bulb" cx="230" cy="21" r="4" fill="#FFD1DC" style="animation-delay:0.3s"/>
+        <circle class="fairy-bulb" cx="370" cy="18" r="4" fill="#FFF3B0" style="animation-delay:0.6s"/>
+        <circle class="fairy-bulb" cx="510" cy="12" r="4" fill="#E6E6FA" style="animation-delay:0.9s"/>
+        <circle class="fairy-bulb" cx="680" cy="12" r="4" fill="#FFF3B0" style="animation-delay:0.2s"/>
+        <circle class="fairy-bulb" cx="820" cy="19" r="4" fill="#FFD1DC" style="animation-delay:0.5s"/>
+        <circle class="fairy-bulb" cx="960" cy="19" r="4" fill="#FFF3B0" style="animation-delay:0.8s"/>
+        <circle class="fairy-bulb" cx="1100" cy="13" r="4" fill="#E6E6FA" style="animation-delay:1.1s"/>
+      </svg>
+    </div>
+
+    <!-- Floating Top Navigation Pill -->
+    <header class="sticky top-2 z-40 px-4">
+      <nav class="max-w-5xl mx-auto glass-card rounded-full px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2">
+        <a href="#hero" class="flex items-center gap-2 font-serif font-bold text-base sm:text-lg text-plum shrink-0">
+          <span class="text-xl">🎂</span>
+          <span>Khushi <span class="text-[11px] font-sans font-bold px-2.5 py-0.5 rounded-full bg-blush/80 text-plum">Nov 19</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-5 text-xs lg:text-sm font-semibold text-plumSoft">
+          <a href="#gallery" class="hover:text-[#C25975] transition">📸 Memories</a>
+          <a href="#scratch-blessings" class="hover:text-[#C25975] transition">🎁 Surprises</a>
+          <a href="#adore" class="hover:text-[#C25975] transition">💖 Flip-Cards</a>
+          <a href="#cake-section" class="hover:text-[#C25975] transition">🕯️ Make a Wish</a>
+          <a href="#letter-wishes" class="hover:text-[#C25975] transition">💌 Birthday Book</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="openSlideshowMode()" class="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#FFD1DC] to-[#F7E7CE] text-plum text-xs font-bold hover:brightness-95 transition cursor-pointer shadow-xs">
+            🎬 Slideshow
+          </button>
+          <button type="button" onclick="launchFireworksShow()" class="hidden sm:inline-flex px-3.5 py-1.5 rounded-full bg-plum text-cream text-xs font-semibold hover:bg-plumSoft transition cursor-pointer shadow-sm">
+            🎆 Party Fireworks
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================================================
+         2. HERO SECTION & LIVE NOVEMBER 19 COUNTDOWN
+         ========================================================= -->
+    <section id="hero" class="pt-10 pb-20 sm:pt-16 sm:pb-26 px-4 text-center relative">
+      <div class="max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-pink text-plum text-xs sm:text-sm font-bold tracking-wide mb-5 shadow-sm">
+          <span>🎈</span>
+          <span>Celebrating Our Beloved Niece &bull; "Khushi Mama"</span>
+          <span>🎉</span>
+        </div>
+
+        <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-extrabold text-plum leading-tight mb-3">
+          Happy Birthday, <br class="sm:hidden" />
+          <span class="gold-foil">Simran!</span> 🎂✨
+        </h1>
+
+        <p class="font-script text-4xl sm:text-5xl md:text-6xl text-[#C25975] mb-3">
+          Our Dearest Khushi (Khushi Mama)
+        </p>
+
+        <p class="font-handwriting text-2xl sm:text-3xl text-plumSoft/90 mb-5">
+          ~ Wishing you balloons, laughter, cake &amp; magic on 19th November ~
+        </p>
+
+        <p class="font-editorial italic text-xl sm:text-2xl text-plumSoft max-w-2xl mx-auto leading-relaxed mb-9">
+          "True to your name, you fill every corner of our home with pure <strong class="font-semibold text-plum">Khushi</strong> (happiness), warmth, courage, and endless sparkle."
+        </p>
+
+        <!-- Live November 19 Countdown Card -->
+        <div class="max-w-2xl mx-auto glass-card rounded-3xl p-6 sm:p-8 border-2 border-white relative">
+          <div id="countdown-header" class="text-xs font-bold uppercase tracking-[0.2em] text-[#C25975] mb-4">
+            🎂 Counting Down to 19th November Party 🎈
+          </div>
+
+          <div id="countdown-grid" class="grid grid-cols-4 gap-3 sm:gap-5">
+            <div class="rounded-2xl bg-gradient-to-b from-white to-blush/40 p-3 sm:p-4 border border-white shadow-xs">
+              <div id="cd-days" class="font-serif text-2xl sm:text-4xl font-bold text-plum">00</div>
+              <div class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-plumSoft mt-1">Days</div>
+            </div>
+            <div class="rounded-2xl bg-gradient-to-b from-white to-lavender/50 p-3 sm:p-4 border border-white shadow-xs">
+              <div id="cd-hours" class="font-serif text-2xl sm:text-4xl font-bold text-plum">00</div>
+              <div class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-plumSoft mt-1">Hours</div>
+            </div>
+            <div class="rounded-2xl bg-gradient-to-b from-white to-champagne/60 p-3 sm:p-4 border border-white shadow-xs">
+              <div id="cd-mins" class="font-serif text-2xl sm:text-4xl font-bold text-plum">00</div>
+              <div class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-plumSoft mt-1">Minutes</div>
+            </div>
+            <div class="rounded-2xl bg-gradient-to-b from-white to-blush/40 p-3 sm:p-4 border border-white shadow-xs">
+              <div id="cd-secs" class="font-serif text-2xl sm:text-4xl font-bold text-[#C25975]">00</div>
+              <div class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-plumSoft mt-1">Seconds</div>
+            </div>
+          </div>
+
+          <div id="birthday-today-banner" class="hidden py-4">
+            <p class="font-serif text-2xl sm:text-3xl font-bold gold-foil mb-1">
+              🎉 Happy Birthday Today, Dearest Khushi! 🎉
+            </p>
+            <p class="text-sm text-plumSoft">Wishing you the sweetest, brightest 19th November celebration ever!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. PERMANENT PHOTO & VIDEO MEMORY GALLERY
+         ========================================================= -->
+    <section id="gallery" class="py-16 sm:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#C25975]">📸 Permanent Memory Album</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-plum mt-2 mb-4">
+            Khushi's Birthday Photo &amp; Video Wall
+          </h2>
+          <p class="text-sm sm:text-base text-plumSoft leading-relaxed">
+            Upload photos or videos to any frame below (or click <strong class="text-plum">+ Add New Photo / Video Memory</strong>). Every uploaded photo, video, and edited caption is saved permanently so it stays right here whenever you open or share the website!
+          </p>
+
+          <!-- Photo Tone Filter Selector -->
+          <div class="mt-6 inline-flex flex-wrap items-center justify-center gap-2 p-2 rounded-2xl sm:rounded-full glass-card border border-white">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-plumSoft px-2">🎨 Photo Filter:</span>
+            <button type="button" data-filter="original" onclick="setGalleryFilter('original')" class="filter-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer bg-plum text-cream">Original</button>
+            <button type="button" data-filter="golden" onclick="setGalleryFilter('golden')" class="filter-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer text-plum hover:bg-blush/40">Golden Hour</button>
+            <button type="button" data-filter="vintage" onclick="setGalleryFilter('vintage')" class="filter-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer text-plum hover:bg-blush/40">Vintage Rose</button>
+            <button type="button" data-filter="dreamy" onclick="setGalleryFilter('dreamy')" class="filter-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer text-plum hover:bg-blush/40">Dreamy Glow</button>
+          </div>
+
+          <!-- Action Toolbar -->
+          <div class="mt-5 flex flex-wrap items-center justify-center gap-3">
+            <button type="button" id="add-memory-btn" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-plum text-cream text-sm font-semibold hover:bg-plumSoft transition shadow-md cursor-pointer">
+              <span>+ Add New Photo / Video Memory</span>
+            </button>
+            <button type="button" onclick="openSlideshowMode()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#E5C158] text-white text-sm font-semibold hover:brightness-95 transition shadow-md cursor-pointer">
+              <span>🎞️ Storybook Slideshow</span>
+            </button>
+            <span id="cloud-status-badge" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full glass-card text-xs font-semibold text-plumSoft border border-gold/30">
+              <span id="cloud-status-dot" class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span id="cloud-status-text">Saved Permanently ✓</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Polaroid & Cinema Grid -->
+        <div id="memory-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. GOLDEN SCRATCH-OFF BIRTHDAY BLESSING CARDS
+         ========================================================= -->
+    <section id="scratch-blessings" class="py-16 sm:py-24 px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#C25975]">🎁 Party Game &amp; Surprises</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-plum mt-2 mb-3">
+            Scratch-Off Birthday Blessings
+          </h2>
+          <p class="text-sm sm:text-base text-plumSoft">
+            Rub away the shimmering gold foil on each party card with your finger or mouse to reveal hidden birthday treats &amp; blessings for Khushi!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8" id="scratch-cards-grid">
+          <div class="scratch-wrapper h-60 rounded-3xl glass-pink border-2 border-white shadow-xl p-6 flex flex-col items-center justify-center text-center">
+            <span class="text-3xl mb-2">👑</span>
+            <p class="font-handwriting text-2xl text-[#C25975] mb-1">Royal Title Unlocked</p>
+            <h3 class="font-serif text-xl font-bold text-plum mb-2">"Our Sweet Khushi Mama"</h3>
+            <p class="font-editorial italic text-lg text-plumSoft">Forever spoiled with endless hugs, chocolates, and family love!</p>
+            <canvas class="scratch-canvas" data-label="Scratch Gold Foil ✨" data-sub="Card #1 • Sweet Nickname"></canvas>
+          </div>
+
+          <div class="scratch-wrapper h-60 rounded-3xl glass-card border-2 border-white shadow-xl p-6 flex flex-col items-center justify-center text-center">
+            <span class="text-3xl mb-2">🎁</span>
+            <p class="font-handwriting text-2xl text-[#C25975] mb-1">Birthday Voucher</p>
+            <h3 class="font-serif text-xl font-bold text-plum mb-2">Special Treat &amp; Outing!</h3>
+            <p class="font-editorial italic text-lg text-plumSoft">Redeemable anytime for your favorite cake, ice cream &amp; celebration day!</p>
+            <canvas class="scratch-canvas" data-label="Scratch Gold Foil 🎁" data-sub="Card #2 • Birthday Surprise"></canvas>
+          </div>
+
+          <div class="scratch-wrapper h-60 rounded-3xl glass-pink border-2 border-white shadow-xl p-6 flex flex-col items-center justify-center text-center">
+            <span class="text-3xl mb-2">🌟</span>
+            <p class="font-handwriting text-2xl text-[#C25975] mb-1">Heartfelt Blessing</p>
+            <h3 class="font-serif text-xl font-bold text-plum mb-2">Shine Bright, Champion!</h3>
+            <p class="font-editorial italic text-lg text-plumSoft">May every karate kick, creative dream &amp; school goal bring you victory!</p>
+            <canvas class="scratch-canvas" data-label="Scratch Gold Foil 🌟" data-sub="Card #3 • Family Blessing"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. "WHY EVERYONE ADORES KHUSHI" 6 INTERACTIVE 3D FLIP-CARDS
+         ========================================================= -->
+    <section id="adore" class="py-16 sm:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#C25975]">💖 Tap or Hover to Flip</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-plum mt-2 mb-3">
+            Why Everyone Adores Khushi
+          </h2>
+          <p class="text-sm sm:text-base text-plumSoft">
+            Six sweet reasons why Simran holds the brightest place in all our hearts.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="flip-card cursor-pointer" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-pink p-7 flex flex-col items-center justify-center text-center border-2 border-white">
+                <span class="text-4xl mb-3">😊</span>
+                <h3 class="font-serif text-xl font-bold text-plum">Your Infectious Smile</h3>
+                <p class="text-xs uppercase tracking-widest text-[#C25975] mt-3 font-semibold">Tap to reveal ✨</p>
+              </div>
+              <div class="flip-card-back glass-card p-7 flex flex-col items-center justify-center text-center border-2 border-gold/40">
+                <p class="font-editorial italic text-xl text-plum leading-relaxed">
+                  "One smile from you lights up the entire room and makes every worry disappear instantly."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card cursor-pointer" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card p-7 flex flex-col items-center justify-center text-center border-2 border-white">
+                <span class="text-4xl mb-3">🥋</span>
+                <h3 class="font-serif text-xl font-bold text-plum">Fearless Karate Spirit</h3>
+                <p class="text-xs uppercase tracking-widest text-[#C25975] mt-3 font-semibold">Tap to reveal ✨</p>
+              </div>
+              <div class="flip-card-back glass-pink p-7 flex flex-col items-center justify-center text-center border-2 border-gold/40">
+                <p class="font-editorial italic text-xl text-plum leading-relaxed">
+                  "Watching you practice karate &amp; yoga with such focus and strength makes us endlessly proud!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card cursor-pointer" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-pink p-7 flex flex-col items-center justify-center text-center border-2 border-white">
+                <span class="text-4xl mb-3">🎨</span>
+                <h3 class="font-serif text-xl font-bold text-plum">Creative Wonder</h3>
+                <p class="text-xs uppercase tracking-widest text-[#C25975] mt-3 font-semibold">Tap to reveal ✨</p>
+              </div>
+              <div class="flip-card-back glass-card p-7 flex flex-col items-center justify-center text-center border-2 border-gold/40">
+                <p class="font-editorial italic text-xl text-plum leading-relaxed">
+                  "From handmade mountains to colorful art projects, your imagination turns simple things into magic."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card cursor-pointer" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card p-7 flex flex-col items-center justify-center text-center border-2 border-white">
+                <span class="text-4xl mb-3">💖</span>
+                <h3 class="font-serif text-xl font-bold text-plum">Pure Heart of Gold</h3>
+                <p class="text-xs uppercase tracking-widest text-[#C25975] mt-3 font-semibold">Tap to reveal ✨</p>
+              </div>
+              <div class="flip-card-back glass-pink p-7 flex flex-col items-center justify-center text-center border-2 border-gold/40">
+                <p class="font-editorial italic text-xl text-plum leading-relaxed">
+                  "You care so deeply for everyone around you—your kindness is your greatest superpower."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card cursor-pointer" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-pink p-7 flex flex-col items-center justify-center text-center border-2 border-white">
+                <span class="text-4xl mb-3">👑</span>
+                <h3 class="font-serif text-xl font-bold text-plum">Our Sweet "Khushi Mama"</h3>
+                <p class="text-xs uppercase tracking-widest text-[#C25975] mt-3 font-semibold">Tap to reveal ✨</p>
+              </div>
+              <div class="flip-card-back glass-card p-7 flex flex-col items-center justify-center text-center border-2 border-gold/40">
+                <p class="font-editorial italic text-xl text-plum leading-relaxed">
+                  "No matter how tall you grow, you will always be our beloved little princess and bundle of joy."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card cursor-pointer" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card p-7 flex flex-col items-center justify-center text-center border-2 border-white">
+                <span class="text-4xl mb-3">🌟</span>
+                <h3 class="font-serif text-xl font-bold text-plum">Unstoppable Bright Future</h3>
+                <p class="text-xs uppercase tracking-widest text-[#C25975] mt-3 font-semibold">Tap to reveal ✨</p>
+              </div>
+              <div class="flip-card-back glass-pink p-7 flex flex-col items-center justify-center text-center border-2 border-gold/40">
+                <p class="font-editorial italic text-xl text-plum leading-relaxed">
+                  "Every year you shine brighter—may all your dreams come true on this 19th November and always!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. INTERACTIVE 5-CANDLE BIRTHDAY CAKE & WISH MAKER
+         ========================================================= -->
+    <section id="cake-section" class="py-16 sm:py-24 px-4">
+      <div class="max-w-3xl mx-auto glass-pink rounded-3xl p-8 sm:p-12 text-center border-2 border-white">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#C25975]">🕯️ Close Your Eyes &amp; Make a Wish</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-plum mt-2 mb-3">
+          Blow Out Your Birthday Candles!
+        </h2>
+        <p id="cake-instruction" class="text-sm sm:text-base text-plumSoft max-w-lg mx-auto mb-6">
+          Tap <strong class="text-plum">Blow Out Candles 🌬️</strong> (or blow into your microphone) to extinguish the 5 glowing flames and launch fireworks!
+        </p>
+
+        <!-- Multi-Tier Pastel Pink & Gold SVG Birthday Cake with Sparklers -->
+        <div class="relative max-w-xs sm:max-w-sm mx-auto my-6 select-none">
+          <svg viewBox="0 0 360 300" class="w-full h-auto drop-shadow-xl">
+            <defs>
+              <linearGradient id="cakeTier1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#FFB6C1"/>
+                <stop offset="50%" stop-color="#FFD1DC"/>
+                <stop offset="100%" stop-color="#F48FB1"/>
+              </linearGradient>
+              <linearGradient id="cakeTier2" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#F7E7CE"/>
+                <stop offset="50%" stop-color="#FFFDF9"/>
+                <stop offset="100%" stop-color="#F3E5AB"/>
+              </linearGradient>
+              <radialGradient id="flameGrad" cx="50%" cy="60%" r="50%">
+                <stop offset="0%" stop-color="#FFF9C4"/>
+                <stop offset="55%" stop-color="#FFB300"/>
+                <stop offset="100%" stop-color="#FF5722"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Left & Right Golden Sparklers -->
+            <g id="cake-sparklers">
+              <line x1="88" y1="178" x2="72" y2="122" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+              <g class="sparkler-star" style="transform-origin: 72px 122px;">
+                <circle cx="72" cy="122" r="5" fill="#FFF3B0"/>
+                <path d="M72 106 L74 120 L88 122 L74 124 L72 138 L70 124 L56 122 L70 120 Z" fill="#D4AF37"/>
+              </g>
+              <line x1="272" y1="178" x2="288" y2="122" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+              <g class="sparkler-star" style="transform-origin: 288px 122px; animation-delay: 0.22s;">
+                <circle cx="288" cy="122" r="5" fill="#FFF3B0"/>
+                <path d="M288 106 L290 120 L304 122 L290 124 L288 138 L286 124 L272 122 L286 120 Z" fill="#D4AF37"/>
+              </g>
+            </g>
+
+            <!-- Gold Cake Stand -->
+            <ellipse cx="180" cy="272" rx="145" ry="16" fill="#D4AF37" opacity="0.85"/>
+            <rect x="162" y="246" width="36" height="26" rx="6" fill="#C59B27"/>
+            <ellipse cx="180" cy="246" rx="132" ry="14" fill="#F3E5AB"/>
+
+            <!-- Bottom Tier -->
+            <rect x="65" y="176" width="230" height="70" rx="18" fill="url(#cakeTier1)"/>
+            <path d="M65 190 Q85 208 105 190 T145 190 T185 190 T225 190 T265 190 T295 190 L295 176 L65 176 Z" fill="#FFFDF9"/>
+
+            <!-- Top Tier -->
+            <rect x="100" y="114" width="160" height="64" rx="16" fill="url(#cakeTier2)"/>
+            <path d="M100 126 Q120 142 140 126 T180 126 T220 126 T260 126 L260 114 L100 114 Z" fill="#FFD1DC"/>
+
+            <!-- Decorative Sugar Hearts -->
+            <text x="180" y="162" text-anchor="middle" font-size="20">💖</text>
+            <text x="130" y="224" text-anchor="middle" font-size="16">🎈</text>
+            <text x="180" y="226" text-anchor="middle" font-size="18">👑</text>
+            <text x="230" y="224" text-anchor="middle" font-size="16">🎈</text>
+
+            <!-- 5 Candles + Flames + Smoke Wisps -->
+            <g>
+              <rect x="122" y="80" width="8" height="34" rx="4" fill="#F48FB1"/>
+              <path class="candle-flame" d="M126 56 C133 66, 132 76, 126 78 C120 76, 119 66, 126 56 Z" fill="url(#flameGrad)"/>
+              <circle class="smoke-puff" cx="126" cy="64" r="5" fill="#B0BEC5"/>
+            </g>
+            <g>
+              <rect x="149" y="76" width="8" height="38" rx="4" fill="#D4AF37"/>
+              <path class="candle-flame" d="M153 52 C160 62, 159 72, 153 74 C147 72, 146 62, 153 52 Z" fill="url(#flameGrad)"/>
+              <circle class="smoke-puff" cx="153" cy="60" r="5" fill="#B0BEC5"/>
+            </g>
+            <g>
+              <rect x="176" y="72" width="8" height="42" rx="4" fill="#C25975"/>
+              <path class="candle-flame" d="M180 48 C187 58, 186 68, 180 70 C174 68, 173 58, 180 48 Z" fill="url(#flameGrad)"/>
+              <circle class="smoke-puff" cx="180" cy="56" r="5" fill="#B0BEC5"/>
+            </g>
+            <g>
+              <rect x="203" y="76" width="8" height="38" rx="4" fill="#D4AF37"/>
+              <path class="candle-flame" d="M207 52 C214 62, 213 72, 207 74 C201 72, 200 62, 207 52 Z" fill="url(#flameGrad)"/>
+              <circle class="smoke-puff" cx="207" cy="60" r="5" fill="#B0BEC5"/>
+            </g>
+            <g>
+              <rect x="230" y="80" width="8" height="34" rx="4" fill="#F48FB1"/>
+              <path class="candle-flame" d="M234 56 C241 66, 240 76, 234 78 C228 76, 227 66, 234 56 Z" fill="url(#flameGrad)"/>
+              <circle class="smoke-puff" cx="234" cy="64" r="5" fill="#B0BEC5"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <button type="button" id="blow-candles-btn" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-[#C25975] to-[#D4AF37] text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition cursor-pointer">
+            Blow Out Candles 🌬️
+          </button>
+          <button type="button" id="mic-blow-btn" class="px-5 py-3.5 rounded-full bg-white/90 text-plum font-semibold text-sm border border-blush hover:bg-white transition cursor-pointer shadow-xs">
+            🎤 Blow via Mic
+          </button>
+          <button type="button" id="relight-candles-btn" class="hidden px-6 py-3 rounded-full bg-plum text-cream font-semibold text-sm hover:bg-plumSoft transition cursor-pointer">
+            🕯️ Relight Candles
+          </button>
+        </div>
+
+        <div id="wish-revealed-box" class="hidden mt-8 p-6 rounded-2xl bg-white/90 border border-gold/40 shadow-inner">
+          <p class="font-script text-3xl text-[#C25975] mb-1">Your Wish Has Taken Flight! ✨</p>
+          <p class="font-editorial italic text-xl text-plum">
+            "May every dream in your heart bloom into reality this year, Simran. Happy 19th November!"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. HEARTFELT LETTER & PERMANENT BIRTHDAY MESSAGES WALL
+         ========================================================= -->
+    <section id="letter-wishes" class="py-16 sm:py-24 px-4">
+      <div class="max-w-5xl mx-auto">
+        <!-- Personal Letter Card -->
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border-2 border-white mb-16 relative overflow-hidden">
+          <div class="text-center mb-6">
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#C25975]">💌 From All of Us With Love</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-plum mt-2">
+              A Letter to Dearest Khushi
+            </h2>
+          </div>
+
+          <div class="max-w-3xl mx-auto font-editorial text-xl sm:text-2xl text-plum leading-relaxed space-y-4">
+            <p class="italic text-[#C25975] font-semibold">My Dearest Simran (Our Sweet Khushi Mama),</p>
+            <p>
+              From the very moment you entered our lives, you brought a joy so pure and radiant that we could only call you <strong>Khushi</strong>. Every laugh, every proud karate stance, every colorful artwork, and every warm hug reminds us how blessed we are to have you as our beloved niece.
+            </p>
+            <p>
+              As you celebrate your birthday on <strong>19th November</strong>, our biggest prayer is that you always keep your fearless spirit, your gentle heart, and that unforgettable smile that brightens all our days.
+            </p>
+            <p class="font-handwriting text-3xl text-right text-[#C25975] pt-2">
+              Forever your biggest cheerleaders, Your Loving Family 💖
+            </p>
+          </div>
+        </div>
+
+        <!-- Family & Friends Birthday Book -->
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#C25975]">📖 Permanent Birthday Guestbook</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-plum mt-2 mb-3">
+            Sign Khushi's Birthday Book
+          </h2>
+          <p class="text-sm sm:text-base text-plumSoft">
+            Write a birthday message (and even attach a photo!)—every note stays permanently pinned on Simran's birthday wall!
+          </p>
+        </div>
+
+        <!-- Sign Birthday Book Form with Optional Photo Attachment -->
+        <form id="wish-form" class="max-w-2xl mx-auto glass-card rounded-3xl p-6 sm:p-8 mb-10 border border-white">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-plumSoft mb-1.5">Your Name</label>
+              <input id="wish-author" type="text" required placeholder="e.g., Mama, Mami, Didi, Dada..." class="w-full px-4 py-2.5 rounded-xl bg-white/90 border border-blush focus:outline-none focus:ring-2 focus:ring-[#C25975] text-sm text-plum" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-plumSoft mb-1.5">Relationship &amp; Card Style</label>
+              <div class="grid grid-cols-2 gap-2">
+                <input id="wish-relation" type="text" placeholder="e.g., Uncle, Cousin" class="w-full px-3 py-2.5 rounded-xl bg-white/90 border border-blush focus:outline-none focus:ring-2 focus:ring-[#C25975] text-sm text-plum" />
+                <select id="wish-color" class="w-full px-3 py-2.5 rounded-xl bg-white/90 border border-blush focus:outline-none focus:ring-2 focus:ring-[#C25975] text-sm text-plum">
+                  <option value="pink">🌸 Blush Rose</option>
+                  <option value="lavender">💜 Lavender</option>
+                  <option value="gold">✨ Gold</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-xs font-semibold uppercase tracking-wider text-plumSoft mb-1.5">Favorite Memory / Birthday Message</label>
+            <textarea id="wish-message" rows="3" required placeholder="Write a sweet wish or favorite memory for Simran (Khushi)..." class="w-full px-4 py-2.5 rounded-xl bg-white/90 border border-blush focus:outline-none focus:ring-2 focus:ring-[#C25975] text-sm text-plum"></textarea>
+          </div>
+
+          <!-- Optional Photo Attachment for Message -->
+          <div class="mb-4 flex flex-wrap items-center justify-between gap-3 p-3 rounded-2xl bg-blush/25 border border-blush/50">
+            <label for="wish-photo-input" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-plum text-xs font-semibold hover:bg-champagne/50 transition cursor-pointer shadow-xs">
+              <span>📷 Attach Photo to Message (Optional)</span>
+            </label>
+            <input id="wish-photo-input" type="file" accept="image/*" class="hidden" />
+            <span id="wish-photo-filename" class="text-xs text-plumSoft truncate max-w-[200px]">No photo chosen</span>
+          </div>
+
+          <div id="wish-live-preview" class="hidden mb-4 p-4 rounded-2xl bg-gradient-to-r from-[#FFD1DC]/40 via-[#FFFDF9] to-[#E6E6FA]/40 border border-dashed border-[#C25975]/40">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-[#C25975] block mb-1">Live Card Preview</span>
+            <p id="preview-msg-text" class="font-editorial italic text-lg text-plum"></p>
+            <p id="preview-author-text" class="text-xs font-semibold text-plumSoft mt-1"></p>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <button type="submit" id="submit-wish-btn" class="w-full sm:w-auto px-6 py-3 rounded-full bg-plum text-cream text-sm font-semibold hover:bg-plumSoft transition cursor-pointer shadow-md">
+              📌 Pin Wish Permanently to Wall
+            </button>
+            <span class="text-xs text-plumSoft">✨ Kept permanently on this website</span>
+          </div>
+        </form>
+
+        <!-- Filter Bar -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+          <button type="button" onclick="setWishFilter('all')" id="wish-filter-all" class="px-4 py-1.5 rounded-full bg-plum text-cream text-xs font-semibold cursor-pointer transition">All Wishes</button>
+          <button type="button" onclick="setWishFilter('favorites')" id="wish-filter-fav" class="px-4 py-1.5 rounded-full glass-card text-plum text-xs font-semibold hover:bg-blush/40 cursor-pointer transition">💖 Most Loved</button>
+        </div>
+
+        <!-- Pinned Wishes Grid -->
+        <div id="wishes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-4 text-center border-t border-blush/40 bg-white/40">
+      <p class="font-script text-3xl text-[#C25975] mb-1">Happy Birthday Simran (Khushi) • 19 November 🎂🎈</p>
+      <p class="text-xs text-plumSoft mb-4">Crafted with endless love for our favorite niece &amp; "Khushi Mama"</p>
+      <button type="button" id="reset-storage-btn" class="px-4 py-1.5 rounded-full border border-plum/20 text-[11px] text-plumSoft hover:bg-blush/30 hover:text-plum transition cursor-pointer">
+        ↺ Reset Local Cache to Defaults
+      </button>
+    </footer>
+  </div>
+
+  <!-- =========================================================
+       FLOATING BOTTOM-RIGHT VINYL MUSIC PLAYER
+       ========================================================= -->
+  <div class="fixed bottom-4 right-4 z-40">
+    <div class="glass-card rounded-full p-2 pr-4 flex items-center gap-3 border-2 border-white shadow-xl">
+      <div id="vinyl-disc" class="w-11 h-11 rounded-full bg-gradient-to-tr from-plum via-[#4A3B48] to-gold flex items-center justify-center shadow-md vinyl-spin vinyl-paused shrink-0">
+        <div class="w-3.5 h-3.5 rounded-full bg-blush border border-white"></div>
+      </div>
+
+      <div class="max-w-[130px] sm:max-w-[165px] overflow-hidden">
+        <p id="music-title" class="text-xs font-bold text-plum truncate">Happy Birthday Box</p>
+        <p id="music-subtitle" class="text-[10px] text-plumSoft truncate">Gentle Piano Melody</p>
+      </div>
+
+      <div class="flex items-center gap-1.5">
+        <button type="button" id="music-play-btn" title="Play / Pause Music" class="w-9 h-9 rounded-full bg-plum text-cream flex items-center justify-center text-xs hover:bg-plumSoft transition cursor-pointer">
+          ▶
+        </button>
+        <button type="button" id="music-mute-btn" title="Mute / Unmute" class="w-8 h-8 rounded-full bg-blush/60 text-plum flex items-center justify-center text-xs hover:bg-blush transition cursor-pointer">
+          🔊
+        </button>
+        <label for="custom-song-input" title="Upload Custom MP3 Song" class="w-8 h-8 rounded-full bg-champagne/80 text-plum flex items-center justify-center text-xs hover:bg-champagne transition cursor-pointer">
+          🎵
+        </label>
+        <input id="custom-song-input" type="file" accept="audio/*" class="hidden" />
+      </div>
+    </div>
+    <audio id="custom-audio-player" loop class="hidden"></audio>
+  </div>
+
+  <!-- =========================================================
+       STORYBOOK CINEMA LIGHTBOX & SLIDESHOW MODAL
+       ========================================================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-plum/90 backdrop-blur-lg flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full bg-cream rounded-3xl p-4 sm:p-7 shadow-2xl border-2 border-white">
+      <div class="flex items-center justify-between gap-2 mb-3">
+        <div class="flex items-center gap-2">
+          <span id="lightbox-counter" class="px-3 py-1 rounded-full bg-blush/60 text-plum text-xs font-bold">1 / 4</span>
+          <button type="button" id="slideshow-toggle-btn" onclick="toggleSlideshowAutoPlay()" class="px-3.5 py-1 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#E5C158] text-white text-xs font-semibold hover:brightness-95 transition cursor-pointer shadow-xs">
+            ▶ Auto-Play Slideshow
+          </button>
+        </div>
+        <button type="button" id="close-lightbox-btn" class="w-9 h-9 rounded-full bg-plum text-white font-bold flex items-center justify-center shadow-lg hover:scale-105 transition cursor-pointer">
+          ✕
+        </button>
+      </div>
+
+      <div class="relative flex items-center justify-center">
+        <button type="button" onclick="navigateLightbox(-1)" title="Previous Memory" class="absolute left-2 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-plum font-bold shadow-md flex items-center justify-center transition cursor-pointer">
+          ‹
+        </button>
+
+        <div id="lightbox-media-container" class="w-full min-h-[260px] max-h-[68vh] flex items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-[#FFD1DC]/30 via-black/5 to-[#E6E6FA]/30"></div>
+
+        <button type="button" onclick="navigateLightbox(1)" title="Next Memory" class="absolute right-2 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-plum font-bold shadow-md flex items-center justify-center transition cursor-pointer">
+          ›
+        </button>
+      </div>
+
+      <div class="mt-4 text-center">
+        <h4 id="lightbox-title" class="font-serif text-xl sm:text-2xl font-bold text-plum"></h4>
+        <p id="lightbox-caption" class="font-editorial italic text-lg text-plumSoft mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Toast Notification -->
+  <div id="toast-box" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden px-5 py-2.5 rounded-full bg-plum text-cream text-xs sm:text-sm font-medium shadow-xl"></div>
+
+  <!-- =========================================================
+       DUAL PERSISTENCE (INDEXEDDB/LOCALSTORAGE + CLOUD SYNC)
+       & FULL INTERACTIVE PARTY ENGINE
+       ========================================================= -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, doc, setDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    /* ---------------------------------------------------------
+       0. TOAST, LOCALSTORAGE & INDEXEDDB MEDIA VAULT
+       --------------------------------------------------------- */
+    let toastTimer = null;
+    function showToast(msg) {
+      const box = document.getElementById('toast-box');
+      if (!box) return;
+      box.textContent = msg;
+      box.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => box.classList.add('hidden'), 3200);
+    }
+
+    function safeLocalGet(key, fallback) {
+      try {
+        const raw = window.localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+
+    function safeLocalSet(key, value) {
+      try {
+        window.localStorage.setItem(key, JSON.stringify(value));
+      } catch (e) {}
+    }
+
+    // IndexedDB Media Vault for large photos, videos & songs locally
+    const DB_NAME = 'KhushiBirthdayPermanentVault_v3';
+    const MEDIA_STORE = 'media_blobs';
+    let idbInstance = null;
+
+    function openVaultDB() {
+      if (idbInstance) return Promise.resolve(idbInstance);
+      if (typeof indexedDB === 'undefined') return Promise.resolve(null);
+      return new Promise((resolve) => {
+        const timeout = setTimeout(() => resolve(null), 1500);
+        try {
+          const req = indexedDB.open(DB_NAME, 1);
+          req.onupgradeneeded = (e) => {
+            const db = e.target.result;
+            if (!db.objectStoreNames.contains(MEDIA_STORE)) {
+              db.createObjectStore(MEDIA_STORE);
+            }
+          };
+          req.onsuccess = (e) => {
+            clearTimeout(timeout);
+            idbInstance = e.target.result;
+            resolve(idbInstance);
+          };
+          req.onerror = () => {
+            clearTimeout(timeout);
+            resolve(null);
+          };
+        } catch (err) {
+          clearTimeout(timeout);
+          resolve(null);
+        }
+      });
+    }
+
+    async function saveMediaBlob(id, blob, mimeType) {
+      try {
+        const db = await openVaultDB();
+        if (!db) return false;
+        return new Promise((resolve) => {
+          const tx = db.transaction(MEDIA_STORE, 'readwrite');
+          tx.objectStore(MEDIA_STORE).put({ blob, mimeType }, id);
+          tx.oncomplete = () => resolve(true);
+          tx.onerror = () => resolve(false);
+        });
+      } catch (e) {
+        return false;
+      }
+    }
+
+    async function loadMediaBlob(id) {
+      try {
+        const db = await openVaultDB();
+        if (!db) return null;
+        return new Promise((resolve) => {
+          const tx = db.transaction(MEDIA_STORE, 'readonly');
+          const req = tx.objectStore(MEDIA_STORE).get(id);
+          req.onsuccess = () => resolve(req.result || null);
+          req.onerror = () => resolve(null);
+        });
+      } catch (e) {
+        return null;
+      }
+    }
+
+    async function clearMediaVault() {
+      try {
+        const db = await openVaultDB();
+        if (!db) return;
+        const tx = db.transaction(MEDIA_STORE, 'readwrite');
+        tx.objectStore(MEDIA_STORE).clear();
+      } catch (e) {}
+    }
+
+    // Compress images into lightweight Data URLs so they also sync permanently across devices via Firestore
+    function compressImageToDataURL(file, maxDim = 960, quality = 0.78) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        const url = URL.createObjectURL(file);
+        img.onload = () => {
+          let { width, height } = img;
+          if (width > maxDim || height > maxDim) {
+            if (width > height) {
+              height = Math.round((height * maxDim) / width);
+              width = maxDim;
+            } else {
+              width = Math.round((width * maxDim) / height);
+              height = maxDim;
+            }
+          }
+          const c = document.createElement('canvas');
+          c.width = width;
+          c.height = height;
+          const ctx = c.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+          URL.revokeObjectURL(url);
+          try {
+            const dataUrl = c.toDataURL('image/jpeg', quality);
+            resolve(dataUrl.length < 750000 ? dataUrl : '');
+          } catch (e) {
+            resolve('');
+          }
+        };
+        img.onerror = () => {
+          URL.revokeObjectURL(url);
+          resolve('');
+        };
+        img.src = url;
+      });
+    }
+
+    /* ---------------------------------------------------------
+       1. NON-BLOCKING CLOUD PERSISTENCE (STRICT PATHS & AUTH)
+       --------------------------------------------------------- */
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'khushi-birthday-nov19';
+    let db = null;
+    let currentUser = null;
+
+    async function initCloudSync() {
+      try {
+        if (typeof __firebase_config === 'undefined' || !__firebase_config) return;
+        const firebaseConfig = JSON.parse(__firebase_config);
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        db = getFirestore(app);
+
+        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+          const cred = await signInWithCustomToken(auth, __initial_auth_token);
+          currentUser = cred.user;
+        } else {
+          const cred = await signInAnonymously(auth);
+          currentUser = cred.user;
+        }
+
+        if (!currentUser) return;
+
+        const statusText = document.getElementById('cloud-status-text');
+        if (statusText) statusText.textContent = 'Cloud & Local Saved Permanently ✓';
+
+        // Listen to shared permanent memories collection
+        const memCol = collection(db, 'artifacts', appId, 'public', 'data', 'khushi_memories');
+        onSnapshot(memCol, async (snap) => {
+          if (snap.empty) return;
+          const cloudItems = [];
+          snap.forEach((docSnap) => {
+            cloudItems.push({ id: docSnap.id, ...docSnap.data() });
+          });
+          cloudItems.sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+
+          for (const item of cloudItems) {
+            const localRecord = await loadMediaBlob(item.id);
+            if (localRecord && localRecord.blob) {
+              item.src = URL.createObjectURL(localRecord.blob);
+              item.type = localRecord.mimeType && localRecord.mimeType.startsWith('video/') ? 'video' : 'image';
+            } else if (item.cloudDataUrl) {
+              item.src = item.cloudDataUrl;
+            }
+          }
+          memories = cloudItems;
+          persistMemoriesLocal();
+          renderMemoryGallery();
+        }, (err) => {
+          console.warn('Memory sync listener notice:', err);
+        });
+
+        // Listen to shared permanent birthday book wishes collection
+        const wishCol = collection(db, 'artifacts', appId, 'public', 'data', 'khushi_wishes');
+        onSnapshot(wishCol, (snap) => {
+          if (snap.empty) return;
+          const cloudWishes = [];
+          snap.forEach((docSnap) => {
+            cloudWishes.push({ id: docSnap.id, ...docSnap.data() });
+          });
+          cloudWishes.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+          wishesList = cloudWishes;
+          safeLocalSet('khushi_wishes_list_v3', wishesList);
+          renderWishes();
+        }, (err) => {
+          console.warn('Wish sync listener notice:', err);
+        });
+      } catch (err) {
+        console.warn('Running in local permanent vault mode:', err);
+      }
+    }
+
+    async function syncMemoryToCloud(item, orderIdx) {
+      if (!db || !currentUser) return;
+      try {
+        const ref = doc(db, 'artifacts', appId, 'public', 'data', 'khushi_memories', item.id);
+        await setDoc(ref, {
+          title: item.title,
+          caption: item.caption,
+          badge: item.badge || 'Cherished Memory',
+          icon: item.icon || '💖',
+          rotation: item.rotation || '-rotate-1',
+          type: item.type || 'image',
+          cloudDataUrl: item.cloudDataUrl || '',
+          order: orderIdx,
+          updatedAt: Date.now()
+        }, { merge: true });
+      } catch (e) {}
+    }
+
+    async function syncWishToCloud(wishObj) {
+      if (!db || !currentUser) return;
+      try {
+        const ref = doc(db, 'artifacts', appId, 'public', 'data', 'khushi_wishes', wishObj.id);
+        await setDoc(ref, wishObj, { merge: true });
+      } catch (e) {}
+    }
+
+    /* ---------------------------------------------------------
+       2. ENTRANCE OVERLAY & WEB AUDIO MUSIC BOX PLAYER
+       --------------------------------------------------------- */
+    let audioCtx = null;
+    let isPlaying = false;
+    let isMuted = false;
+    let melodyTimer = null;
+    let usingCustomAudio = false;
+
+    const melodyNotes = [
+      { f: 261.63, d: 0.35 }, { f: 261.63, d: 0.25 }, { f: 293.66, d: 0.6 }, { f: 261.63, d: 0.6 }, { f: 349.23, d: 0.6 }, { f: 329.63, d: 1.0 },
+      { f: 261.63, d: 0.35 }, { f: 261.63, d: 0.25 }, { f: 293.66, d: 0.6 }, { f: 261.63, d: 0.6 }, { f: 392.00, d: 0.6 }, { f: 349.23, d: 1.0 },
+      { f: 261.63, d: 0.35 }, { f: 261.63, d: 0.25 }, { f: 523.25, d: 0.6 }, { f: 440.00, d: 0.6 }, { f: 349.23, d: 0.6 }, { f: 329.63, d: 0.6 }, { f: 293.66, d: 1.0 },
+      { f: 466.16, d: 0.35 }, { f: 466.16, d: 0.25 }, { f: 440.00, d: 0.6 }, { f: 349.23, d: 0.6 }, { f: 392.00, d: 0.6 }, { f: 349.23, d: 1.2 }
+    ];
+
+    function playBellNote(freq, duration) {
+      if (!audioCtx || isMuted || !isPlaying) return;
+      try {
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const overtone = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, now);
+        overtone.type = 'triangle';
+        overtone.frequency.setValueAtTime(freq * 2, now);
+
+        const overtoneGain = audioCtx.createGain();
+        overtoneGain.gain.setValueAtTime(0.03, now);
+
+        gain.gain.setValueAtTime(0.001, now);
+        gain.gain.linearRampToValueAtTime(0.14, now + 0.03);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + duration * 1.4);
+
+        osc.connect(gain);
+        overtone.connect(overtoneGain);
+        overtoneGain.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        osc.start(now);
+        overtone.start(now);
+        osc.stop(now + duration * 1.45);
+        overtone.stop(now + duration * 1.45);
+      } catch (e) {}
+    }
+
+    let noteIdx = 0;
+    function scheduleNextNote() {
+      if (!isPlaying || usingCustomAudio) return;
+      const n = melodyNotes[noteIdx % melodyNotes.length];
+      playBellNote(n.f, n.d);
+      noteIdx++;
+      melodyTimer = setTimeout(scheduleNextNote, n.d * 780);
+    }
+
+    function updateMusicUI() {
+      const playBtn = document.getElementById('music-play-btn');
+      const vinyl = document.getElementById('vinyl-disc');
+      if (playBtn) playBtn.textContent = isPlaying ? '❚❚' : '▶';
+      if (vinyl) {
+        if (isPlaying) vinyl.classList.remove('vinyl-paused');
+        else vinyl.classList.add('vinyl-paused');
+      }
+    }
+
+    function startMusicBox() {
+      if (usingCustomAudio) {
+        const player = document.getElementById('custom-audio-player');
+        player.play().catch(() => {});
+        isPlaying = true;
+        updateMusicUI();
+        return;
+      }
+      try {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        if (!isPlaying) {
+          isPlaying = true;
+          scheduleNextNote();
+          updateMusicUI();
+        }
+      } catch (e) {}
+    }
+
+    function pauseMusicBox() {
+      isPlaying = false;
+      clearTimeout(melodyTimer);
+      if (usingCustomAudio) {
+        document.getElementById('custom-audio-player').pause();
+      }
+      updateMusicUI();
+    }
+
+    function openEntranceCelebration(withMusic = true) {
+      const overlay = document.getElementById('entrance-overlay');
+      if (overlay && !overlay.classList.contains('opened')) {
+        overlay.classList.add('opened');
+        launchConfettiBurst();
+        if (withMusic) startMusicBox();
+        setTimeout(() => initScratchCards(), 200);
+      }
+    }
+
+    document.getElementById('entrance-card').addEventListener('click', (e) => {
+      if (e.target.id === 'skip-intro-btn') {
+        openEntranceCelebration(false);
+      } else {
+        openEntranceCelebration(true);
+      }
+    });
+
+    document.getElementById('music-play-btn').addEventListener('click', () => {
+      if (isPlaying) pauseMusicBox();
+      else startMusicBox();
+    });
+
+    document.getElementById('music-mute-btn').addEventListener('click', () => {
+      isMuted = !isMuted;
+      document.getElementById('custom-audio-player').muted = isMuted;
+      document.getElementById('music-mute-btn').textContent = isMuted ? '🔇' : '🔊';
+    });
+
+    document.getElementById('custom-song-input').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      pauseMusicBox();
+      usingCustomAudio = true;
+      const player = document.getElementById('custom-audio-player');
+      player.src = URL.createObjectURL(file);
+      document.getElementById('music-title').textContent = file.name.replace(/\.[^/.]+$/, '');
+      document.getElementById('music-subtitle').textContent = 'Custom Birthday Song';
+      await saveMediaBlob('custom_song_blob', file, file.type);
+      safeLocalSet('khushi_custom_song_name_v3', file.name.replace(/\.[^/.]+$/, ''));
+      startMusicBox();
+      showToast('🎵 Custom song loaded & saved permanently!');
+    });
+
+    /* ---------------------------------------------------------
+       3. LIVE COUNTDOWN TO 19 NOVEMBER
+       --------------------------------------------------------- */
+    function updateCountdown() {
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      const month = now.getMonth();
+      const date = now.getDate();
+
+      if (month === 10 && date === 19) {
+        document.getElementById('countdown-grid').classList.add('hidden');
+        document.getElementById('countdown-header').textContent = '🎂 19th November Birthday Party is Here! 🎂';
+        document.getElementById('birthday-today-banner').classList.remove('hidden');
+        return;
+      }
+
+      let targetYear = currentYear;
+      if (month > 10 || (month === 10 && date > 19)) {
+        targetYear = currentYear + 1;
+      }
+      const target = new Date(targetYear, 10, 19, 0, 0, 0);
+      const diff = Math.max(0, target - now);
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+      document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    /* ---------------------------------------------------------
+       4. PERMANENT PHOTO & VIDEO MEMORY GALLERY
+       --------------------------------------------------------- */
+    const defaultMemories = [
+      {
+        id: 'mem-1',
+        title: 'Happy Birthday Khushi Mama',
+        caption: 'With teddy bears, pink roses, glowing candles & endless family love on 19th November.',
+        badge: 'Birthday Celebration Portrait',
+        icon: '🧸',
+        rotation: '-rotate-1',
+        type: 'image',
+        src: '',
+        cloudDataUrl: ''
+      },
+      {
+        id: 'mem-2',
+        title: 'Karate & Yoga Champion',
+        caption: 'Strong, fearless, and graceful—shining bright in her white karate gi & yoga poses!',
+        badge: 'Strength & Discipline',
+        icon: '🥋',
+        rotation: 'rotate-1',
+        type: 'image',
+        src: '',
+        cloudDataUrl: ''
+      },
+      {
+        id: 'mem-3',
+        title: 'Little Princess & Creative Artist',
+        caption: 'From crafting colorful mountain dioramas to wearing her royal pink crown with a radiant smile.',
+        badge: 'Creativity & Joy',
+        icon: '👑',
+        rotation: 'rotate-1',
+        type: 'image',
+        src: '',
+        cloudDataUrl: ''
+      },
+      {
+        id: 'mem-4',
+        title: 'Birthday Highlight Reel',
+        caption: 'Every silly face, peace sign, and joyful memory captured in motion for our dearest Simran.',
+        badge: 'Video Memory Reel',
+        icon: '🎬',
+        rotation: '-rotate-1',
+        type: 'video',
+        src: '',
+        cloudDataUrl: ''
+      }
+    ];
+
+    let memories = safeLocalGet('khushi_memories_meta_v3', null) || JSON.parse(JSON.stringify(defaultMemories));
+    let currentGalleryFilter = safeLocalGet('khushi_gallery_filter_v3', 'original');
+
+    function persistMemoriesLocal() {
+      const serializable = memories.map(({ src, ...rest }) => rest);
+      safeLocalSet('khushi_memories_meta_v3', serializable);
+    }
+
+    window.setGalleryFilter = function(filterName) {
+      currentGalleryFilter = filterName;
+      safeLocalSet('khushi_gallery_filter_v3', filterName);
+      document.querySelectorAll('.filter-pill').forEach((btn) => {
+        if (btn.dataset.filter === filterName) {
+          btn.classList.add('bg-plum', 'text-cream');
+          btn.classList.remove('text-plum');
+        } else {
+          btn.classList.remove('bg-plum', 'text-cream');
+          btn.classList.add('text-plum');
+        }
+      });
+      renderMemoryGallery();
+    };
+
+    function buildIllustratedSVG(item) {
+      return `
+        <svg viewBox="0 0 400 240" class="w-full h-full">
+          <defs>
+            <linearGradient id="grad-${item.id}" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#FFD1DC" stop-opacity="0.78"/>
+              <stop offset="50%" stop-color="#FFFDF9" stop-opacity="0.92"/>
+              <stop offset="100%" stop-color="#E6E6FA" stop-opacity="0.78"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="240" rx="18" fill="url(#grad-${item.id})"/>
+          <circle cx="52" cy="44" r="22" fill="#D4AF37" opacity="0.18"/>
+          <circle cx="348" cy="196" r="30" fill="#F48FB1" opacity="0.2"/>
+          <rect x="16" y="16" width="368" height="208" rx="14" fill="none" stroke="#C25975" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6"/>
+          <text x="200" y="94" text-anchor="middle" font-size="44">${item.icon || '🎂'}</text>
+          <text x="200" y="130" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="16" fill="#2D242C">${item.badge || 'Cherished Memory'}</text>
+          <text x="200" y="154" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#5A4A58">Click or Drop Khushi's Photo / Video Here</text>
+          <rect x="116" y="170" width="168" height="28" rx="14" fill="#2D242C"/>
+          <text x="200" y="188" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-weight="600" font-size="11" fill="#FFFDF9">📷 Upload Photo / Video</text>
+        </svg>
+      `;
+    }
+
+    window.handleMediaFileUpload = async function(index, file) {
+      if (!file) return;
+      const item = memories[index];
+      if (!item) return;
+
+      const isVideo = file.type.startsWith('video/');
+      item.type = isVideo ? 'video' : 'image';
+      item.src = URL.createObjectURL(file);
+
+      await saveMediaBlob(item.id, file, file.type);
+
+      if (!isVideo) {
+        item.cloudDataUrl = await compressImageToDataURL(file);
+      } else {
+        item.cloudDataUrl = '';
+      }
+
+      persistMemoriesLocal();
+      renderMemoryGallery();
+      launchConfettiBurst();
+      showToast(`✨ ${isVideo ? 'Video' : 'Photo'} saved permanently to "${item.title}"!`);
+      await syncMemoryToCloud(item, index);
+    };
+
+    function renderMemoryGallery() {
+      const grid = document.getElementById('memory-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      memories.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = `polaroid-card glass-card rounded-3xl p-4 sm:p-5 border-2 border-white shadow-lg ${item.rotation || '-rotate-1'} flex flex-col justify-between relative`;
+
+        card.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          card.classList.add('ring-4', 'ring-[#C25975]/50');
+        });
+        card.addEventListener('dragleave', () => {
+          card.classList.remove('ring-4', 'ring-[#C25975]/50');
+        });
+        card.addEventListener('drop', (e) => {
+          e.preventDefault();
+          card.classList.remove('ring-4', 'ring-[#C25975]/50');
+          if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+            window.handleMediaFileUpload(index, e.dataTransfer.files[0]);
+          }
+        });
+
+        const filterClass = `filter-${currentGalleryFilter}`;
+        let mediaHTML = '';
+        if (item.src) {
+          if (item.type === 'video') {
+            mediaHTML = `
+              <div class="relative w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-black group">
+                <video src="${item.src}" controls playsinline class="w-full h-full object-contain ${filterClass}"></video>
+                <button type="button" onclick="openLightbox(${index})" class="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/65 text-white text-xs backdrop-blur-sm hover:bg-black transition cursor-pointer">
+                  ⛶ Cinema View
+                </button>
+              </div>
+            `;
+          } else {
+            mediaHTML = `
+              <div onclick="openLightbox(${index})" class="relative w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-cream cursor-zoom-in group">
+                <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${filterClass}" />
+                <div class="absolute inset-0 bg-plum/0 group-hover:bg-plum/15 transition flex items-end justify-end p-3">
+                  <span class="opacity-0 group-hover:opacity-100 transition px-3 py-1 rounded-full bg-white/90 text-plum text-xs font-semibold shadow">
+                    🔍 View in Cinema
+                  </span>
+                </div>
+              </div>
+            `;
+          }
+        } else {
+          mediaHTML = `
+            <label for="file-input-${item.id}" class="block w-full h-64 sm:h-72 rounded-2xl overflow-hidden cursor-pointer hover:brightness-[0.98] transition">
+              ${buildIllustratedSVG(item)}
+            </label>
+          `;
+        }
+
+        card.innerHTML = `
+          <div>
+            ${mediaHTML}
+            <div class="mt-4 px-1">
+              <div class="flex items-center justify-between gap-2">
+                <h3 contenteditable="true" data-field="title" data-idx="${index}" class="font-serif text-xl font-bold text-plum focus:outline-none focus:bg-blush/30 rounded px-1 -mx-1">${item.title}</h3>
+                <span id="saved-tag-${item.id}" class="text-[11px] font-semibold text-emerald-700 opacity-0 transition-opacity shrink-0">Saved Permanently ✓</span>
+              </div>
+              <p contenteditable="true" data-field="caption" data-idx="${index}" class="font-editorial italic text-lg text-plumSoft mt-1 leading-snug focus:outline-none focus:bg-blush/30 rounded px-1 -mx-1">${item.caption}</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-blush/50 flex items-center justify-between gap-2">
+            <label for="file-input-${item.id}" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-r from-[#FFD1DC] to-[#F7E7CE] text-plum text-xs font-semibold hover:brightness-95 transition cursor-pointer shadow-xs">
+              <span>📷 Add / Replace Photo or Video</span>
+            </label>
+            <input id="file-input-${item.id}" type="file" accept="image/*,video/*" class="hidden" onchange="handleMediaFileUpload(${index}, this.files[0])" />
+            <span class="text-[11px] text-plumSoft/75">Click text to edit</span>
+          </div>
+        `;
+
+        card.querySelectorAll('[contenteditable="true"]').forEach((el) => {
+          el.addEventListener('blur', async () => {
+            const idx = Number(el.dataset.idx);
+            const field = el.dataset.field;
+            const val = el.textContent.trim();
+            if (memories[idx] && val) {
+              memories[idx][field] = val;
+              persistMemoriesLocal();
+              const tag = document.getElementById(`saved-tag-${memories[idx].id}`);
+              if (tag) {
+                tag.classList.remove('opacity-0');
+                setTimeout(() => tag.classList.add('opacity-0'), 2200);
+              }
+              await syncMemoryToCloud(memories[idx], idx);
+            }
+          });
+        });
+
+        grid.appendChild(card);
+      });
+    }
+
+    document.getElementById('add-memory-btn').addEventListener('click', async () => {
+      const count = memories.length + 1;
+      const newMem = {
+        id: 'mem-' + Date.now(),
+        title: `Birthday Party Moment #${count}`,
+        caption: 'Click here to write your sweet caption for Khushi...',
+        badge: 'New Birthday Memory',
+        icon: '🎈',
+        rotation: count % 2 === 0 ? 'rotate-1' : '-rotate-1',
+        type: 'image',
+        src: '',
+        cloudDataUrl: ''
+      };
+      memories.push(newMem);
+      persistMemoriesLocal();
+      renderMemoryGallery();
+      showToast('✨ New memory frame added & saved permanently!');
+      await syncMemoryToCloud(newMem, memories.length - 1);
+    });
+
+    /* ---------------------------------------------------------
+       5. STORYBOOK CINEMA LIGHTBOX & SLIDESHOW
+       --------------------------------------------------------- */
+    let activeLightboxIndex = 0;
+    let slideshowInterval = null;
+
+    window.openLightbox = function(index) {
+      if (!memories.length) return;
+      activeLightboxIndex = ((index % memories.length) + memories.length) % memories.length;
+      const item = memories[activeLightboxIndex];
+      const modal = document.getElementById('lightbox-modal');
+      const container = document.getElementById('lightbox-media-container');
+      const filterClass = `filter-${currentGalleryFilter}`;
+
+      document.getElementById('lightbox-counter').textContent = `${activeLightboxIndex + 1} / ${memories.length}`;
+      document.getElementById('lightbox-title').textContent = item.title;
+      document.getElementById('lightbox-caption').textContent = item.caption;
+
+      if (!item.src) {
+        container.innerHTML = `
+          <div class="py-16 px-6 text-center">
+            <div class="text-5xl mb-3">${item.icon || '🎂'}</div>
+            <p class="font-serif text-xl font-bold text-plum mb-1">${item.title}</p>
+            <p class="text-xs text-plumSoft">Upload a photo or video to this frame in the gallery to see it in full cinema view!</p>
+          </div>
+        `;
+      } else if (item.type === 'video') {
+        container.innerHTML = `<video src="${item.src}" controls autoplay class="max-h-[66vh] w-auto rounded-xl ${filterClass}"></video>`;
+      } else {
+        container.innerHTML = `<img src="${item.src}" alt="${item.title}" class="max-h-[66vh] w-auto rounded-xl object-contain transition-all duration-500 ${filterClass}" />`;
+      }
+      modal.classList.remove('hidden');
+    };
+
+    window.navigateLightbox = function(step) {
+      window.openLightbox(activeLightboxIndex + step);
+    };
+
+    window.openSlideshowMode = function() {
+      const firstMediaIdx = memories.findIndex((m) => Boolean(m.src));
+      window.openLightbox(firstMediaIdx >= 0 ? firstMediaIdx : 0);
+      if (!slideshowInterval) {
+        window.toggleSlideshowAutoPlay();
+      }
+      if (!isPlaying) startMusicBox();
+    };
+
+    window.toggleSlideshowAutoPlay = function() {
+      const btn = document.getElementById('slideshow-toggle-btn');
+      if (slideshowInterval) {
+        clearInterval(slideshowInterval);
+        slideshowInterval = null;
+        btn.textContent = '▶ Auto-Play Slideshow';
+      } else {
+        btn.textContent = '❚❚ Pause Slideshow';
+        slideshowInterval = setInterval(() => window.navigateLightbox(1), 3800);
+      }
+    };
+
+    document.getElementById('close-lightbox-btn').addEventListener('click', () => {
+      if (slideshowInterval) {
+        clearInterval(slideshowInterval);
+        slideshowInterval = null;
+        document.getElementById('slideshow-toggle-btn').textContent = '▶ Auto-Play Slideshow';
+      }
+      document.getElementById('lightbox-media-container').innerHTML = '';
+      document.getElementById('lightbox-modal').classList.add('hidden');
+    });
+
+    document.getElementById('lightbox-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox-modal') {
+        document.getElementById('close-lightbox-btn').click();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('lightbox-modal');
+      if (modal.classList.contains('hidden')) return;
+      if (e.key === 'ArrowRight') window.navigateLightbox(1);
+      if (e.key === 'ArrowLeft') window.navigateLightbox(-1);
+      if (e.key === 'Escape') document.getElementById('close-lightbox-btn').click();
+    });
+
+    /* ---------------------------------------------------------
+       6. INTERACTIVE GOLDEN SCRATCH-OFF BLESSING CARDS
+       --------------------------------------------------------- */
+    function initScratchCards() {
+      const canvases = document.querySelectorAll('.scratch-canvas');
+      canvases.forEach((cvs) => {
+        if (cvs.dataset.initialized === 'true') return;
+        const parent = cvs.parentElement;
+        const rect = parent.getBoundingClientRect();
+        if (!rect.width || !rect.height) return;
+
+        cvs.dataset.initialized = 'true';
+        cvs.width = rect.width;
+        cvs.height = rect.height;
+        const c = cvs.getContext('2d');
+
+        const grad = c.createLinearGradient(0, 0, cvs.width, cvs.height);
+        grad.addColorStop(0, '#C59B27');
+        grad.addColorStop(0.35, '#F3E5AB');
+        grad.addColorStop(0.65, '#D4AF37');
+        grad.addColorStop(1, '#AA7C11');
+        c.fillStyle = grad;
+        c.fillRect(0, 0, cvs.width, cvs.height);
+
+        c.fillStyle = 'rgba(45, 36, 44, 0.8)';
+        c.font = 'bold 17px "Playfair Display", Georgia, serif';
+        c.textAlign = 'center';
+        c.fillText(cvs.dataset.label || 'Scratch Gold Foil ✨', cvs.width / 2, cvs.height / 2 - 4);
+        c.font = '600 11px "Plus Jakarta Sans", sans-serif';
+        c.fillText(cvs.dataset.sub || 'Rub with finger or cursor', cvs.width / 2, cvs.height / 2 + 18);
+
+        let scratching = false;
+        let isCleared = false;
+
+        function scratchAt(clientX, clientY) {
+          if (isCleared) return;
+          const bounds = cvs.getBoundingClientRect();
+          const x = (clientX - bounds.left) * (cvs.width / bounds.width);
+          const y = (clientY - bounds.top) * (cvs.height / bounds.height);
+          c.globalCompositeOperation = 'destination-out';
+          c.beginPath();
+          c.arc(x, y, 24, 0, Math.PI * 2);
+          c.fill();
+
+          const pixels = c.getImageData(0, 0, cvs.width, cvs.height).data;
+          let transparentCount = 0;
+          for (let i = 3; i < pixels.length; i += 32) {
+            if (pixels[i] === 0) transparentCount++;
+          }
+          if (transparentCount / (pixels.length / 32) > 0.42) {
+            isCleared = true;
+            cvs.classList.add('revealed');
+            launchConfettiBurst();
+            playCelebrationChime();
+            showToast('✨ Golden birthday blessing uncovered!');
+          }
+        }
+
+        cvs.addEventListener('pointerdown', (e) => {
+          scratching = true;
+          scratchAt(e.clientX, e.clientY);
+        });
+        cvs.addEventListener('pointermove', (e) => {
+          if (scratching) scratchAt(e.clientX, e.clientY);
+        });
+        window.addEventListener('pointerup', () => {
+          scratching = false;
+        });
+      });
+    }
+
+    function playCelebrationChime() {
+      try {
+        const ctx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+        if (!audioCtx) audioCtx = ctx;
+        if (ctx.state === 'suspended') ctx.resume();
+        const chord = [523.25, 659.25, 783.99, 1046.50];
+        chord.forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const g = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.08);
+          g.gain.setValueAtTime(0.001, ctx.currentTime + i * 0.08);
+          g.gain.linearRampToValueAtTime(0.11, ctx.currentTime + i * 0.08 + 0.03);
+          g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + i * 0.08 + 0.9);
+          osc.connect(g);
+          g.connect(ctx.destination);
+          osc.start(ctx.currentTime + i * 0.08);
+          osc.stop(ctx.currentTime + i * 0.08 + 0.95);
+        });
+      } catch (e) {}
+    }
+
+    /* ---------------------------------------------------------
+       7. INTERACTIVE BIRTHDAY CAKE & CANDLES
+       --------------------------------------------------------- */
+    let candlesLit = true;
+    let micStream = null;
+
+    function blowOutCandles() {
+      if (!candlesLit) return;
+      candlesLit = false;
+
+      document.querySelectorAll('.candle-flame').forEach((flame) => flame.classList.add('blown-out'));
+      document.querySelectorAll('.smoke-puff').forEach((smoke) => {
+        smoke.classList.remove('rising');
+        void smoke.offsetWidth;
+        smoke.classList.add('rising');
+      });
+
+      const sparklers = document.getElementById('cake-sparklers');
+      if (sparklers) sparklers.style.opacity = '0.35';
+
+      document.getElementById('blow-candles-btn').classList.add('hidden');
+      document.getElementById('mic-blow-btn').classList.add('hidden');
+      document.getElementById('relight-candles-btn').classList.remove('hidden');
+      document.getElementById('wish-revealed-box').classList.remove('hidden');
+      document.getElementById('cake-instruction').textContent = 'Hooray!! Your wish is on its way to the stars! 🌟';
+
+      playCelebrationChime();
+      launchFireworksShow();
+      showToast('🎂 Happy Birthday Khushi! Your wish is made!');
+    }
+
+    function relightCandles() {
+      candlesLit = true;
+      document.querySelectorAll('.candle-flame').forEach((flame) => flame.classList.remove('blown-out'));
+      document.querySelectorAll('.smoke-puff').forEach((smoke) => smoke.classList.remove('rising'));
+
+      const sparklers = document.getElementById('cake-sparklers');
+      if (sparklers) sparklers.style.opacity = '1';
+
+      document.getElementById('blow-candles-btn').classList.remove('hidden');
+      document.getElementById('mic-blow-btn').classList.remove('hidden');
+      document.getElementById('relight-candles-btn').classList.add('hidden');
+      document.getElementById('wish-revealed-box').classList.add('hidden');
+      document.getElementById('cake-instruction').textContent = 'Tap Blow Out Candles 🌬️ (or blow into your microphone) to extinguish the 5 glowing flames and launch fireworks!';
+    }
+
+    document.getElementById('blow-candles-btn').addEventListener('click', blowOutCandles);
+    document.getElementById('relight-candles-btn').addEventListener('click', relightCandles);
+
+    document.getElementById('mic-blow-btn').addEventListener('click', async () => {
+      try {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+          showToast('🎤 Microphone unavailable — tap Blow Out Candles 🌬️!');
+          return;
+        }
+        micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const micCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const source = micCtx.createMediaStreamSource(micStream);
+        const analyser = micCtx.createAnalyser();
+        analyser.fftSize = 256;
+        source.connect(analyser);
+        const dataArr = new Uint8Array(analyser.frequencyBinCount);
+
+        showToast('🎤 Blow gently into your microphone to blow out the candles!');
+
+        function checkBlowLevel() {
+          if (!candlesLit) {
+            micStream.getTracks().forEach((t) => t.stop());
+            return;
+          }
+          analyser.getByteFrequencyData(dataArr);
+          let sum = 0;
+          for (let i = 0; i < 24; i++) sum += dataArr[i];
+          if (sum / 24 > 125) {
+            micStream.getTracks().forEach((t) => t.stop());
+            blowOutCandles();
+            return;
+          }
+          requestAnimationFrame(checkBlowLevel);
+        }
+        checkBlowLevel();
+      } catch (err) {
+        showToast('🎤 Mic permission declined — tap Blow Out Candles 🌬️ instead!');
+      }
+    });
+
+    /* ---------------------------------------------------------
+       8. PERMANENT FAMILY & FRIENDS BIRTHDAY BOOK
+       --------------------------------------------------------- */
+    const defaultWishes = [
+      {
+        id: 'wish-default-1',
+        author: 'Loving Family',
+        relation: 'Forever Family',
+        message: 'Happy Birthday Khushi Mama! May all your dreams come true, stay happy always, and keep shining bright. You are so special to us! 💖',
+        color: 'pink',
+        photoUrl: '',
+        hearts: 12,
+        cakes: 5,
+        sparkles: 8,
+        createdAt: 1700000003
+      },
+      {
+        id: 'wish-default-2',
+        author: 'Mama & Family',
+        relation: 'Proud Family',
+        message: 'To our little karate & yoga superstar Simran—may God bless you with good health, endless laughter, and every success in life! 🎂👑',
+        color: 'gold',
+        photoUrl: '',
+        hearts: 9,
+        cakes: 6,
+        sparkles: 7,
+        createdAt: 1700000002
+      },
+      {
+        id: 'wish-default-3',
+        author: 'Everyone Who Adores You',
+        relation: 'Blessings',
+        message: '19th November will always be our favorite day because it brought our sweetest Khushi into this world. Keep smiling forever! 🎈✨',
+        color: 'lavender',
+        photoUrl: '',
+        hearts: 15,
+        cakes: 4,
+        sparkles: 11,
+        createdAt: 1700000001
+      }
+    ];
+
+    let wishesList = safeLocalGet('khushi_wishes_list_v3', null) || JSON.parse(JSON.stringify(defaultWishes));
+    let currentWishFilter = 'all';
+    let pendingWishPhotoFile = null;
+
+    document.getElementById('wish-photo-input').addEventListener('change', (e) => {
+      const f = e.target.files[0];
+      pendingWishPhotoFile = f || null;
+      document.getElementById('wish-photo-filename').textContent = f ? `Attached: ${f.name}` : 'No photo chosen';
+    });
+
+    window.setWishFilter = function(filterType) {
+      currentWishFilter = filterType;
+      const allBtn = document.getElementById('wish-filter-all');
+      const favBtn = document.getElementById('wish-filter-fav');
+      if (filterType === 'all') {
+        allBtn.classList.add('bg-plum', 'text-cream');
+        favBtn.classList.remove('bg-plum', 'text-cream');
+      } else {
+        favBtn.classList.add('bg-plum', 'text-cream');
+        allBtn.classList.remove('bg-plum', 'text-cream');
+      }
+      renderWishes();
+    };
+
+    function renderWishes() {
+      const grid = document.getElementById('wishes-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      const bgMap = {
+        pink: 'from-[#FFD1DC]/55 to-[#FFFDF9]',
+        lavender: 'from-[#E6E6FA]/70 to-[#FFFDF9]',
+        gold: 'from-[#F7E7CE]/75 to-[#FFFDF9]'
+      };
+
+      const displayList = wishesList
+        .map((item, originalIdx) => ({ item, originalIdx }))
+        .filter(({ item }) => currentWishFilter === 'all' || (item.hearts || 0) >= 10);
+
+      displayList.forEach(({ item: w, originalIdx: idx }) => {
+        const card = document.createElement('div');
+        const gradient = bgMap[w.color] || bgMap.pink;
+        const relationBadge = w.relation
+          ? `<span class="text-[10px] px-2 py-0.5 rounded-full bg-white/85 text-plumSoft font-medium">${w.relation}</span>`
+          : '';
+        const photoSnippet = w.photoUrl
+          ? `<div class="mb-3 rounded-2xl overflow-hidden border border-white shadow-xs"><img src="${w.photoUrl}" alt="Memory from ${w.author}" class="w-full h-44 object-cover" /></div>`
+          : '';
+
+        card.className = `rounded-3xl p-6 bg-gradient-to-br ${gradient} border border-white shadow-md flex flex-col justify-between transition hover:-translate-y-1`;
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-[#C25975]">— ${w.author}</span>
+              ${relationBadge}
+            </div>
+            ${photoSnippet}
+            <p class="font-editorial italic text-xl text-plum leading-relaxed mb-4">
+              "${w.message}"
+            </p>
+          </div>
+          <div class="flex items-center justify-between gap-1.5 pt-3 border-t border-plum/10">
+            <div class="flex items-center gap-1.5">
+              <button type="button" onclick="reactWish(${idx}, 'hearts')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/85 hover:bg-blush/50 text-xs font-semibold text-[#C25975] transition cursor-pointer shadow-xs">
+                <span>❤️</span><span>${w.hearts || 1}</span>
+              </button>
+              <button type="button" onclick="reactWish(${idx}, 'cakes')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/85 hover:bg-champagne/70 text-xs font-semibold text-plum transition cursor-pointer shadow-xs">
+                <span>🎂</span><span>${w.cakes || 1}</span>
+              </button>
+              <button type="button" onclick="reactWish(${idx}, 'sparkles')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/85 hover:bg-lavender/70 text-xs font-semibold text-plum transition cursor-pointer shadow-xs">
+                <span>✨</span><span>${w.sparkles || 1}</span>
+              </button>
+            </div>
+            <span class="text-[10px] text-emerald-700 font-semibold">Saved ✓</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    window.reactWish = async function(idx, field) {
+      const w = wishesList[idx];
+      if (!w) return;
+      w[field] = (w[field] || 1) + 1;
+      safeLocalSet('khushi_wishes_list_v3', wishesList);
+      renderWishes();
+      await syncWishToCloud(w);
+    };
+
+    function updateWishLivePreview() {
+      const author = document.getElementById('wish-author').value.trim();
+      const message = document.getElementById('wish-message').value.trim();
+      const box = document.getElementById('wish-live-preview');
+      if (!author && !message) {
+        box.classList.add('hidden');
+        return;
+      }
+      box.classList.remove('hidden');
+      document.getElementById('preview-msg-text').textContent = message ? `"${message}"` : '"Your heartfelt birthday blessing for Khushi..."';
+      document.getElementById('preview-author-text').textContent = author ? `— ${author}` : '— Loving Family Member';
+    }
+    document.getElementById('wish-author').addEventListener('input', updateWishLivePreview);
+    document.getElementById('wish-message').addEventListener('input', updateWishLivePreview);
+
+    document.getElementById('wish-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const author = document.getElementById('wish-author').value.trim();
+      const relation = document.getElementById('wish-relation').value.trim();
+      const message = document.getElementById('wish-message').value.trim();
+      const color = document.getElementById('wish-color').value;
+      if (!author || !message) return;
+
+      const submitBtn = document.getElementById('submit-wish-btn');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Saving Permanently...';
+
+      const wishId = 'wish-' + Date.now();
+      let attachedDataUrl = '';
+      if (pendingWishPhotoFile) {
+        await saveMediaBlob(wishId, pendingWishPhotoFile, pendingWishPhotoFile.type);
+        attachedDataUrl = await compressImageToDataURL(pendingWishPhotoFile, 720, 0.74);
+      }
+
+      const newWish = {
+        id: wishId,
+        author,
+        relation,
+        message,
+        color,
+        photoUrl: attachedDataUrl,
+        hearts: 1,
+        cakes: 1,
+        sparkles: 1,
+        createdAt: Date.now()
+      };
+
+      wishesList.unshift(newWish);
+      safeLocalSet('khushi_wishes_list_v3', wishesList);
+      renderWishes();
+
+      e.target.reset();
+      pendingWishPhotoFile = null;
+      document.getElementById('wish-photo-filename').textContent = 'No photo chosen';
+      document.getElementById('wish-live-preview').classList.add('hidden');
+      submitBtn.disabled = false;
+      submitBtn.textContent = '📌 Pin Wish Permanently to Wall';
+
+      launchConfettiBurst();
+      showToast('📌 Your birthday message is permanently saved for Khushi!');
+      await syncWishToCloud(newWish);
+    });
+
+    /* ---------------------------------------------------------
+       9. CONFETTI & FIREWORKS PARTICLE ENGINE
+       --------------------------------------------------------- */
+    const canvas = document.getElementById('celebration-canvas');
+    const ctx2d = canvas.getContext('2d');
+    let particles = [];
+    const confettiColors = ['#FFD1DC', '#D4AF37', '#F48FB1', '#E6E6FA', '#F7E7CE', '#C25975', '#FFF3B0'];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    window.launchConfettiBurst = function() {
+      for (let i = 0; i < 110; i++) {
+        particles.push({
+          x: canvas.width * (0.2 + Math.random() * 0.6),
+          y: canvas.height * 0.45,
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.85) * 15,
+          size: 6 + Math.random() * 7,
+          color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 10,
+          gravity: 0.28,
+          alpha: 1
+        });
+      }
+    };
+
+    window.launchFireworksShow = function() {
+      const bursts = [
+        { x: canvas.width * 0.25, y: canvas.height * 0.32, delay: 0 },
+        { x: canvas.width * 0.75, y: canvas.height * 0.28, delay: 260 },
+        { x: canvas.width * 0.50, y: canvas.height * 0.22, delay: 520 },
+        { x: canvas.width * 0.35, y: canvas.height * 0.42, delay: 780 },
+        { x: canvas.width * 0.68, y: canvas.height * 0.40, delay: 1020 }
+      ];
+      bursts.forEach((b) => {
+        setTimeout(() => {
+          for (let i = 0; i < 65; i++) {
+            const angle = (Math.PI * 2 * i) / 65;
+            const speed = 3 + Math.random() * 8;
+            particles.push({
+              x: b.x,
+              y: b.y,
+              vx: Math.cos(angle) * speed,
+              vy: Math.sin(angle) * speed,
+              size: 5 + Math.random() * 5,
+              color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
+              rotation: Math.random() * 360,
+              vRot: (Math.random() - 0.5) * 12,
+              gravity: 0.14,
+              alpha: 1
+            });
+          }
+        }, b.delay);
+      });
+    };
+
+    function animateParticles() {
+      ctx2d.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += p.gravity;
+        p.rotation += p.vRot;
+        p.alpha -= 0.008;
+
+        if (p.alpha <= 0 || p.y > canvas.height + 40) {
+          particles.splice(i, 1);
+          continue;
+        }
+
+        ctx2d.save();
+        ctx2d.globalAlpha = Math.max(0, p.alpha);
+        ctx2d.translate(p.x, p.y);
+        ctx2d.rotate((p.rotation * Math.PI) / 180);
+        ctx2d.fillStyle = p.color;
+        ctx2d.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
+        ctx2d.restore();
+      }
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    /* ---------------------------------------------------------
+       10. HYDRATE SAVED MEDIA, BALLOONS & GOLD DUST
+       --------------------------------------------------------- */
+    async function hydrateSavedMedia() {
+      for (const item of memories) {
+        const record = await loadMediaBlob(item.id);
+        if (record && record.blob) {
+          item.src = URL.createObjectURL(record.blob);
+          item.type = record.mimeType && record.mimeType.startsWith('video/') ? 'video' : 'image';
+        } else if (item.cloudDataUrl) {
+          item.src = item.cloudDataUrl;
+        }
+      }
+      renderMemoryGallery();
+
+      for (const w of wishesList) {
+        if (!w.photoUrl) {
+          const rec = await loadMediaBlob(w.id);
+          if (rec && rec.blob) {
+            w.photoUrl = URL.createObjectURL(rec.blob);
+          }
+        }
+      }
+      renderWishes();
+
+      const savedSong = await loadMediaBlob('custom_song_blob');
+      if (savedSong && savedSong.blob) {
+        const player = document.getElementById('custom-audio-player');
+        player.src = URL.createObjectURL(savedSong.blob);
+        usingCustomAudio = true;
+        document.getElementById('music-title').textContent = safeLocalGet('khushi_custom_song_name_v3', 'Saved Birthday Song');
+        document.getElementById('music-subtitle').textContent = 'Saved Custom Song';
+      }
+    }
+
+    document.getElementById('reset-storage-btn').addEventListener('click', async () => {
+      try {
+        window.localStorage.removeItem('khushi_memories_meta_v3');
+        window.localStorage.removeItem('khushi_wishes_list_v3');
+        window.localStorage.removeItem('khushi_gallery_filter_v3');
+        window.localStorage.removeItem('khushi_custom_song_name_v3');
+      } catch (e) {}
+      await clearMediaVault();
+      memories = JSON.parse(JSON.stringify(defaultMemories));
+      wishesList = JSON.parse(JSON.stringify(defaultWishes));
+      window.setGalleryFilter('original');
+      renderWishes();
+      showToast('↺ Local cache reset to default birthday frames!');
+    });
+
+    // Floating Pastel & Metallic Helium Balloons
+    (function setupHeliumBalloons() {
+      const layer = document.getElementById('balloons-layer');
+      if (!layer) return;
+      const balloonColors = ['#FFD1DC', '#E6E6FA', '#F7E7CE', '#E09F9D', '#F48FB1'];
+      for (let i = 0; i < 11; i++) {
+        const color = balloonColors[i % balloonColors.length];
+        const size = 44 + (i % 4) * 10;
+        const wrapper = document.createElement('div');
+        wrapper.className = 'helium-balloon';
+        wrapper.style.left = (4 + i * 9) + 'vw';
+        wrapper.style.animationDuration = (18 + (i % 5) * 4) + 's';
+        wrapper.style.animationDelay = (-i * 2.4) + 's';
+        wrapper.innerHTML = `
+          <svg width="${size}" height="${size * 1.45}" viewBox="0 0 60 88">
+            <path d="M30 58 Q26 70 32 78 T28 88" fill="none" stroke="#D4AF37" stroke-width="1.3"/>
+            <ellipse cx="30" cy="30" rx="23" ry="27" fill="${color}" stroke="#FFFFFF" stroke-width="1.5"/>
+            <ellipse cx="22" cy="20" rx="5" ry="9" fill="#FFFFFF" opacity="0.45" transform="rotate(-18 22 20)"/>
+            <polygon points="27,57 33,57 30,61" fill="${color}"/>
+          </svg>
+        `;
+        layer.appendChild(wrapper);
+      }
+    })();
+
+    // Floating Golden Dust
+    (function setupGoldenDust() {
+      const dustLayer = document.getElementById('gold-dust-layer');
+      if (!dustLayer) return;
+      for (let i = 0; i < 24; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'gold-dust';
+        dot.style.left = Math.random() * 100 + 'vw';
+        dot.style.top = Math.random() * 100 + 'vh';
+        dot.style.animationDelay = (-Math.random() * 14) + 's';
+        dot.style.animationDuration = (11 + Math.random() * 9) + 's';
+        dustLayer.appendChild(dot);
+      }
+    })();
+
+    // Immediate Render & Background Hydration
+    window.setGalleryFilter(currentGalleryFilter);
+    renderWishes();
+    initScratchCards();
+    hydrateSavedMedia();
+    initCloudSync();
+  </script>
+</body>
+</html>
